@@ -1,0 +1,57 @@
+{
+  "dataset": "Flowers",
+  "method_family": "SAGE-AG",
+  "concat_metrics": {
+    "ACC": 0.6803921568627451,
+    "NMI": 0.8788975929967033,
+    "ARI": 0.5800730610102814
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AG[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.94643783569336,
+        "final_loss_consist": 3.017028331756592,
+        "final_loss_entropy": 9.226974487304688,
+        "ACC": 0.40490196078431373,
+        "NMI": 0.7344057695084404,
+        "ARI": 0.2999221633226398
+      }
+    },
+    {
+      "variant_name": "SAGE-AG[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.731483459472656,
+        "final_loss_consist": 2.83235764503479,
+        "final_loss_entropy": 9.226734161376953,
+        "ACC": 0.46176470588235297,
+        "NMI": 0.7839992420150586,
+        "ARI": 0.3731025312612333
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.5
+    ],
+    "mean_gate_train": 0.1553666591644287,
+    "mean_gate_test": 0.15435554087162018,
+    "mean_smooth_train": 0.20390141010284424,
+    "mean_smooth_test": 0.2000514715909958
+  }
+}

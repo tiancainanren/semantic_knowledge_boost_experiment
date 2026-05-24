@@ -1,0 +1,54 @@
+{
+  "dataset": "CIFAR-10",
+  "method_family": "SAGE-AGC",
+  "concat_metrics": {
+    "ACC": 0.7617,
+    "NMI": 0.766661163545775,
+    "ARI": 0.6856659893257958
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "CIFAR-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.6140323742148803,
+        "final_loss_consist": 0.03693293985555467,
+        "final_loss_entropy": 4.590636164871688,
+        "ACC": 0.9145,
+        "NMI": 0.8269595361688697,
+        "ARI": 0.8232049741149189
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            50000
+          ],
+          "mean": 0.16803357005119324,
+          "std": 0.081852026283741
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            10000
+          ],
+          "mean": 0.16866587102413177,
+          "std": 0.08094868063926697
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.16803357005119324,
+    "mean_adaptive_gate_test": 0.16866587102413177
+  }
+}

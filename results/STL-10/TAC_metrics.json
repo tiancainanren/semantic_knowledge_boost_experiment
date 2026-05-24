@@ -1,0 +1,34 @@
+{
+  "dataset": "STL-10",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.86175,
+    "NMI": 0.9200472981222613,
+    "ARI": 0.8493017008450532
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "STL-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.5474720001220703,
+        "final_loss_consist": 0.013462443215151628,
+        "final_loss_entropy": 4.589481618669298,
+        "ACC": 0.98275,
+        "NMI": 0.9563804669556437,
+        "ARI": 0.9622061768045822
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}

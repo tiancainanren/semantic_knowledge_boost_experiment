@@ -1,0 +1,45 @@
+{
+  "dataset": "DTD",
+  "best_second_wave": {
+    "dataset": "DTD",
+    "config_name": "dual_agp",
+    "concat_ACC": 0.4654255319148936,
+    "concat_NMI": 0.6186788703822035,
+    "concat_ARI": 0.30602003366685987,
+    "train_ACC": 0.5148936170212766,
+    "train_NMI": 0.627003984471388,
+    "train_ARI": 0.3597001439992513,
+    "image_guidance": 0.05,
+    "meta": "{\"source\": \"simple+prompt\", \"variant\": \"dual_agp_hybrid\", \"mean_alpha_train_prompt\": 0.5064384937286377, \"mean_alpha_test_prompt\": 0.5068485140800476}"
+  },
+  "previous_best": {
+    "method": "ag_texture35_res",
+    "train_ACC": 0.5218085106382979,
+    "concat_ACC": 0.4585106382978723
+  },
+  "tac_baseline": {
+    "dataset": "DTD",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.4569148936170212,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": 0.0127659574468084,
+    "train_ACC": 0.4872340425531914,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": 0.0042553191489361,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "DTD",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.4441489361702128,
+    "concat_delta_vs_TAC": -0.0127659574468084,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.4829787234042553,
+    "train_delta_vs_TAC": -0.0042553191489361,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "gain_vs_previous_best_train_acc": -0.006914893617021356,
+  "gain_vs_tac_train_acc": 0.027659574468085146,
+  "gain_vs_kec_train_acc": 0.03191489361702127
+}

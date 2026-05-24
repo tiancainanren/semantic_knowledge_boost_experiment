@@ -1,0 +1,36 @@
+{
+  "dataset": "DTD",
+  "method_family": "SAGE-A",
+  "concat_metrics": {
+    "ACC": 0.45904255319148934,
+    "NMI": 0.6097930954522686,
+    "ARI": 0.3057545255181663
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-A[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "DTD",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 47,
+        "final_loss_distill": 6.267481327056885,
+        "final_loss_consist": 0.456022036927087,
+        "final_loss_entropy": 7.636956623622349,
+        "ACC": 0.47127659574468084,
+        "NMI": 0.6002148132454994,
+        "ARI": 0.3202832683492198
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ],
+    "mean_gate_train": 0.1518022119998932,
+    "mean_gate_test": 0.1518895924091339
+  }
+}

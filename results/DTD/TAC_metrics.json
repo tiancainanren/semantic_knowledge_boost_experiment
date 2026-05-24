@@ -1,0 +1,34 @@
+{
+  "dataset": "DTD",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.45691489361702126,
+    "NMI": 0.5944351004267242,
+    "ARI": 0.28768774469414415
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "DTD",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 47,
+        "final_loss_distill": 6.519660813467843,
+        "final_loss_consist": 0.6354041014398847,
+        "final_loss_entropy": 7.646007810320173,
+        "ACC": 0.48723404255319147,
+        "NMI": 0.6168675495804512,
+        "ARI": 0.3327266919138273
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}

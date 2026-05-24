@@ -1,0 +1,80 @@
+{
+  "dataset": "Flowers",
+  "method_family": "SAGE-AGP",
+  "concat_metrics": {
+    "ACC": 0.6725490196078432,
+    "NMI": 0.8827513834290702,
+    "ARI": 0.5838814851019819
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGP[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.905826568603516,
+        "final_loss_consist": 3.0043585300445557,
+        "final_loss_entropy": 9.228130340576172,
+        "ACC": 0.40980392156862744,
+        "NMI": 0.7361930577918417,
+        "ARI": 0.3043730703229675
+      }
+    },
+    {
+      "variant_name": "SAGE-AGP[g=0.25]",
+      "variant_suffix": "g=0.25",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.776501655578613,
+        "final_loss_consist": 2.9239141941070557,
+        "final_loss_entropy": 9.227258682250977,
+        "ACC": 0.42745098039215684,
+        "NMI": 0.7493941405839597,
+        "ARI": 0.3265759212004657
+      }
+    },
+    {
+      "variant_name": "SAGE-AGP[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.720096588134766,
+        "final_loss_consist": 2.8348255157470703,
+        "final_loss_entropy": 9.226905822753906,
+        "ACC": 0.45,
+        "NMI": 0.7775828532212521,
+        "ARI": 0.3637407675779555
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "mean_gate_train": 0.1553666591644287,
+    "mean_gate_test": 0.15435554087162018,
+    "mean_smooth_train": 0.20390141010284424,
+    "mean_smooth_test": 0.2000514715909958,
+    "mean_proto_mix_train": 0.2539013922214508,
+    "mean_proto_mix_test": 0.25005146861076355,
+    "anchor_num_train": 304,
+    "anchor_num_test": 304
+  }
+}

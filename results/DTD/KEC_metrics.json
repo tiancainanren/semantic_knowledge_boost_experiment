@@ -1,0 +1,34 @@
+{
+  "dataset": "DTD",
+  "method_family": "KEC",
+  "concat_metrics": {
+    "ACC": 0.4441489361702128,
+    "NMI": 0.6102776672021213,
+    "ARI": 0.30372898941714854
+  },
+  "train_variants": [
+    {
+      "variant_name": "KEC[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "DTD",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 47,
+        "final_loss_distill": 6.274323463439941,
+        "final_loss_consist": 0.54659389598029,
+        "final_loss_entropy": 7.644174439566476,
+        "ACC": 0.4829787234042553,
+        "NMI": 0.6082475628228138,
+        "ARI": 0.3334095526421751
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ]
+  }
+}

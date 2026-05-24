@@ -1,0 +1,36 @@
+{
+  "dataset": "CIFAR-20",
+  "method_family": "SAGE-A",
+  "concat_metrics": {
+    "ACC": 0.5732,
+    "NMI": 0.6101057872790949,
+    "ARI": 0.44090512311203517
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-A[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "CIFAR-20",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 20,
+        "final_loss_distill": 3.877183724924461,
+        "final_loss_consist": 0.0854945963959104,
+        "final_loss_entropy": 5.961398739175698,
+        "ACC": 0.5508,
+        "NMI": 0.5665846475287855,
+        "ARI": 0.3975674596062979
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ],
+    "mean_gate_train": 0.18140840530395508,
+    "mean_gate_test": 0.18159613013267517
+  }
+}

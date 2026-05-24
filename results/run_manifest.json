@@ -1,0 +1,191 @@
+[
+  {
+    "dataset": "CIFAR-10",
+    "best_concat": {
+      "dataset": "CIFAR-10",
+      "method": "KEC[g=0.5]",
+      "family": "KEC",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.7706,
+      "concat_NMI": 0.7740126009161201,
+      "concat_ARI": 0.6987021229474742,
+      "train_ACC": 0.8883,
+      "train_NMI": 0.7918718403859691,
+      "train_ARI": 0.776759225453619
+    },
+    "best_train": {
+      "dataset": "CIFAR-10",
+      "method": "SAGE-AG[g=0.0]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.7617,
+      "concat_NMI": 0.766661163545775,
+      "concat_ARI": 0.6856659893257958,
+      "train_ACC": 0.9225,
+      "train_NMI": 0.8414823368262535,
+      "train_ARI": 0.8386178058923015
+    }
+  },
+  {
+    "dataset": "CIFAR-20",
+    "best_concat": {
+      "dataset": "CIFAR-20",
+      "method": "KEC[g=0.5]",
+      "family": "KEC",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.5747,
+      "concat_NMI": 0.6054619768579614,
+      "concat_ARI": 0.44074144633194945,
+      "train_ACC": 0.5275,
+      "train_NMI": 0.5593440404900437,
+      "train_ARI": 0.3864981667783996
+    },
+    "best_train": {
+      "dataset": "CIFAR-20",
+      "method": "SAGE-AG[g=0.0]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.5686,
+      "concat_NMI": 0.6098520098547738,
+      "concat_ARI": 0.4313028448756638,
+      "train_ACC": 0.6125,
+      "train_NMI": 0.6110480326230281,
+      "train_ARI": 0.44544206718111595
+    }
+  },
+  {
+    "dataset": "STL-10",
+    "best_concat": {
+      "dataset": "STL-10",
+      "method": "SAGE-A[g=0.5]",
+      "family": "SAGE-A",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.8635,
+      "concat_NMI": 0.9219634906759069,
+      "concat_ARI": 0.8512841742002939,
+      "train_ACC": 0.984625,
+      "train_NMI": 0.9607181263022465,
+      "train_ARI": 0.9662471937448978
+    },
+    "best_train": {
+      "dataset": "STL-10",
+      "method": "SAGE-AG[g=0.5]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.838625,
+      "concat_NMI": 0.9001113519924733,
+      "concat_ARI": 0.8099263257114439,
+      "train_ACC": 0.9855,
+      "train_NMI": 0.9624641767889526,
+      "train_ARI": 0.9681533007726595
+    }
+  },
+  {
+    "dataset": "DTD",
+    "best_concat": {
+      "dataset": "DTD",
+      "method": "SAGE-AG[g=0.0]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.47925531914893615,
+      "concat_NMI": 0.6112305465926201,
+      "concat_ARI": 0.3052116341006428,
+      "train_ACC": 0.5090425531914894,
+      "train_NMI": 0.6222847840256476,
+      "train_ARI": 0.3446637011369578
+    },
+    "best_train": {
+      "dataset": "DTD",
+      "method": "SAGE-AG[g=0.0]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.47925531914893615,
+      "concat_NMI": 0.6112305465926201,
+      "concat_ARI": 0.3052116341006428,
+      "train_ACC": 0.5090425531914894,
+      "train_NMI": 0.6222847840256476,
+      "train_ARI": 0.3446637011369578
+    }
+  },
+  {
+    "dataset": "StanfordDogs",
+    "best_concat": {
+      "dataset": "StanfordDogs",
+      "method": "SAGE-AGP[g=0.0]",
+      "family": "SAGE-AGP",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.4399902818270165,
+      "concat_NMI": 0.6340585997585358,
+      "concat_ARI": 0.3258615285621157,
+      "train_ACC": 0.49067055393586007,
+      "train_NMI": 0.6568164959678612,
+      "train_ARI": 0.3500297149419991
+    },
+    "best_train": {
+      "dataset": "StanfordDogs",
+      "method": "SAGE-AGP[g=0.0]",
+      "family": "SAGE-AGP",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.4399902818270165,
+      "concat_NMI": 0.6340585997585358,
+      "concat_ARI": 0.3258615285621157,
+      "train_ACC": 0.49067055393586007,
+      "train_NMI": 0.6568164959678612,
+      "train_ARI": 0.3500297149419991
+    }
+  },
+  {
+    "dataset": "Flowers",
+    "best_concat": {
+      "dataset": "Flowers",
+      "method": "SAGE-A[g=0.5]",
+      "family": "SAGE-A",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.6843137254901961,
+      "concat_NMI": 0.8756798437319597,
+      "concat_ARI": 0.5789433877789809,
+      "train_ACC": 0.4549019607843137,
+      "train_NMI": 0.7773742315204499,
+      "train_ARI": 0.3642338235712489
+    },
+    "best_train": {
+      "dataset": "Flowers",
+      "method": "SAGE-AG[g=0.5]",
+      "family": "SAGE-AG",
+      "variant_suffix": "g=0.5",
+      "concat_ACC": 0.6803921568627451,
+      "concat_NMI": 0.8788975929967033,
+      "concat_ARI": 0.5800730610102814,
+      "train_ACC": 0.46176470588235297,
+      "train_NMI": 0.7839992420150586,
+      "train_ARI": 0.3731025312612333
+    }
+  },
+  {
+    "dataset": "Pets",
+    "best_concat": {
+      "dataset": "Pets",
+      "method": "TAC[g=0.0]",
+      "family": "TAC",
+      "variant_suffix": "g=0.0",
+      "concat_ACC": 0.702098664486236,
+      "concat_NMI": 0.8096062119235549,
+      "concat_ARI": 0.6070879359419828,
+      "train_ACC": 0.7735077677841373,
+      "train_NMI": 0.8376168322917897,
+      "train_ARI": 0.6893880654603355
+    },
+    "best_train": {
+      "dataset": "Pets",
+      "method": "SAGE-AGP[g=0.25]",
+      "family": "SAGE-AGP",
+      "variant_suffix": "g=0.25",
+      "concat_ACC": 0.6860179885527392,
+      "concat_NMI": 0.8116381970247832,
+      "concat_ARI": 0.6120891043267571,
+      "train_ACC": 0.821749795584628,
+      "train_NMI": 0.8594157580495692,
+      "train_ARI": 0.731308706039447
+    }
+  }
+]

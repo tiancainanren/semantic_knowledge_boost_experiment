@@ -1,0 +1,45 @@
+{
+  "dataset": "StanfordDogs",
+  "best_second_wave": {
+    "dataset": "StanfordDogs",
+    "config_name": "dual_cross_preserve",
+    "concat_ACC": 0.5071428571428571,
+    "concat_NMI": 0.6742488077785167,
+    "concat_ARI": 0.38715817740926345,
+    "train_ACC": 0.5650631681243926,
+    "train_NMI": 0.6968735868875561,
+    "train_ARI": 0.42036257871831273,
+    "image_guidance": 0.05,
+    "meta": "{\"source\": \"simple+prompt\", \"variant\": \"cross_hybrid_plus_prompt_preserve\", \"mean_cross_alpha_train_prompt_side\": 0.6424746513366699, \"mean_cross_alpha_test_prompt_side\": 0.6424746513366699, \"preserve_weight\": 0.18}"
+  },
+  "previous_best": {
+    "method": "agp_base_g0",
+    "train_ACC": 0.49067055393586,
+    "concat_ACC": 0.4399902818270165
+  },
+  "tac_baseline": {
+    "dataset": "StanfordDogs",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.4377065111758989,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": 0.0137026239067055,
+    "train_ACC": 0.4580174927113702,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": 0.0215257531584062,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "StanfordDogs",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.4240038872691934,
+    "concat_delta_vs_TAC": -0.0137026239067055,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.436491739552964,
+    "train_delta_vs_TAC": -0.0215257531584062,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "gain_vs_previous_best_train_acc": 0.0743926141885326,
+  "gain_vs_tac_train_acc": 0.1070456754130224,
+  "gain_vs_kec_train_acc": 0.12857142857142861
+}

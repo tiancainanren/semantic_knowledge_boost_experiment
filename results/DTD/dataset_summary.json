@@ -1,0 +1,31 @@
+{
+  "dataset": "DTD",
+  "cluster_num": 47,
+  "train_samples": 3760,
+  "test_samples": 1880,
+  "knowledge_bank_size": 47,
+  "tac_baseline": {
+    "ACC": 0.45691489361702126,
+    "NMI": 0.5944351004267242,
+    "ARI": 0.28768774469414415
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.4441489361702128,
+    "NMI": 0.6102776672021213,
+    "ARI": 0.30372898941714854
+  },
+  "kec_baseline_train": {
+    "dataset": "DTD",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 47,
+    "final_loss_distill": 6.274323463439941,
+    "final_loss_consist": 0.54659389598029,
+    "final_loss_entropy": 7.644174439566476,
+    "ACC": 0.4829787234042553,
+    "NMI": 0.6082475628228138,
+    "ARI": 0.3334095526421751
+  }
+}

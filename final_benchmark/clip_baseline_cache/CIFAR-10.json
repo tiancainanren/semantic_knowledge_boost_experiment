@@ -1,0 +1,9 @@
+{
+  "dataset": "CIFAR-10",
+  "source": "tac_paper_reproduction_artifact",
+  "num_samples": 10000,
+  "num_classes": 10,
+  "ACC": 0.7621,
+  "NMI": 0.7202591766489801,
+  "ARI": 0.6398611140235211
+}

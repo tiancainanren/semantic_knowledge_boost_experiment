@@ -1,0 +1,9 @@
+{
+  "dataset": "StanfordDogs",
+  "source": "computed_from_local_images",
+  "num_samples": 20580,
+  "num_classes": 120,
+  "ACC": 0.2065597667638484,
+  "NMI": 0.4113643101065727,
+  "ARI": 0.11733644047583698
+}

@@ -1,0 +1,34 @@
+{
+  "dataset": "StanfordDogs",
+  "method_family": "KEC",
+  "concat_metrics": {
+    "ACC": 0.4240038872691934,
+    "NMI": 0.6343328589939664,
+    "ARI": 0.31476306016143357
+  },
+  "train_variants": [
+    {
+      "variant_name": "KEC[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 7.689109468460083,
+        "final_loss_consist": 0.8129498869180679,
+        "final_loss_entropy": 9.458099985122681,
+        "ACC": 0.43649173955296405,
+        "NMI": 0.6329136327193549,
+        "ARI": 0.31060560298296597
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ]
+  }
+}

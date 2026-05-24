@@ -1,0 +1,9 @@
+{
+  "dataset": "STL-10",
+  "source": "tac_paper_reproduction_artifact",
+  "num_samples": 8000,
+  "num_classes": 10,
+  "ACC": 0.9625,
+  "NMI": 0.9195039067595763,
+  "ARI": 0.9193413916834394
+}

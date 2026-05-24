@@ -1,0 +1,54 @@
+{
+  "dataset": "STL-10",
+  "method_family": "SAGE-AGPC",
+  "concat_metrics": {
+    "ACC": 0.8605,
+    "NMI": 0.9199455492783806,
+    "ARI": 0.8478214062473605
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGPC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "STL-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.5238223870595298,
+        "final_loss_consist": 0.011733582760724757,
+        "final_loss_entropy": 4.589441670311822,
+        "ACC": 0.985375,
+        "NMI": 0.9618002727303429,
+        "ARI": 0.9678726172229647
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            5000
+          ],
+          "mean": 0.21098308265209198,
+          "std": 0.08544250577688217
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            8000
+          ],
+          "mean": 0.2099592685699463,
+          "std": 0.0854761153459549
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.21098308265209198,
+    "mean_adaptive_gate_test": 0.2099592685699463
+  }
+}

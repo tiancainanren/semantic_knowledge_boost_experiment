@@ -1,0 +1,34 @@
+{
+  "dataset": "StanfordDogs",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.4377065111758989,
+    "NMI": 0.637291837992525,
+    "ARI": 0.3177929139967706
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 8.485364294052124,
+        "final_loss_consist": 0.9426642701029777,
+        "final_loss_entropy": 9.465016555786132,
+        "ACC": 0.45801749271137027,
+        "NMI": 0.6421195343246942,
+        "ARI": 0.3224774186904658
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}

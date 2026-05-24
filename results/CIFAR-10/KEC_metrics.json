@@ -1,0 +1,34 @@
+{
+  "dataset": "CIFAR-10",
+  "method_family": "KEC",
+  "concat_metrics": {
+    "ACC": 0.7706,
+    "NMI": 0.7740126009161201,
+    "ARI": 0.6987021229474742
+  },
+  "train_variants": [
+    {
+      "variant_name": "KEC[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "CIFAR-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.57889481918099,
+        "final_loss_consist": 0.031064872985187265,
+        "final_loss_entropy": 4.590348858194253,
+        "ACC": 0.8883,
+        "NMI": 0.7918718403859691,
+        "ARI": 0.776759225453619
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ]
+  }
+}

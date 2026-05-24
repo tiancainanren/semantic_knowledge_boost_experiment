@@ -1,0 +1,9 @@
+{
+  "dataset": "DTD",
+  "source": "tac_paper_reproduction_artifact",
+  "num_samples": 1880,
+  "num_classes": 47,
+  "ACC": 0.4398936170212766,
+  "NMI": 0.5893121750893267,
+  "ARI": 0.2963633952654679
+}

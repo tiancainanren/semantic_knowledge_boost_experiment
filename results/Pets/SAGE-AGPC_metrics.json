@@ -1,0 +1,54 @@
+{
+  "dataset": "Pets",
+  "method_family": "SAGE-AGPC",
+  "concat_metrics": {
+    "ACC": 0.6860179885527392,
+    "NMI": 0.8116381970247832,
+    "ARI": 0.6120891043267571
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGPC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "Pets",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 37,
+        "final_loss_distill": 5.49828713280814,
+        "final_loss_consist": 0.38521432876586914,
+        "final_loss_entropy": 7.16438238961356,
+        "ACC": 0.7803216135186699,
+        "NMI": 0.8414415729815641,
+        "ARI": 0.6952916105494951
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            3680
+          ],
+          "mean": 0.22156625986099243,
+          "std": 0.08894720673561096
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            3669
+          ],
+          "mean": 0.2228679358959198,
+          "std": 0.09015755355358124
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.22156625986099243,
+    "mean_adaptive_gate_test": 0.2228679358959198
+  }
+}

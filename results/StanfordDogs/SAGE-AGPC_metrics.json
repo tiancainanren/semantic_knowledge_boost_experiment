@@ -1,0 +1,54 @@
+{
+  "dataset": "StanfordDogs",
+  "method_family": "SAGE-AGPC",
+  "concat_metrics": {
+    "ACC": 0.4399902818270165,
+    "NMI": 0.6340585997585358,
+    "ARI": 0.3258615285621157
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGPC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 7.968247210979461,
+        "final_loss_consist": 0.916828241944313,
+        "final_loss_entropy": 9.464199495315551,
+        "ACC": 0.4761418853255588,
+        "NMI": 0.6457318341283375,
+        "ARI": 0.33057358213223453
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            20580
+          ],
+          "mean": 0.2575990557670593,
+          "std": 0.09057926386594772
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            20580
+          ],
+          "mean": 0.2575990557670593,
+          "std": 0.09057926386594772
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.2575990557670593,
+    "mean_adaptive_gate_test": 0.2575990557670593
+  }
+}

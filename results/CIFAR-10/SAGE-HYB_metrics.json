@@ -1,0 +1,56 @@
+{
+  "dataset": "CIFAR-10",
+  "method_family": "SAGE-HYB",
+  "concat_metrics": {
+    "ACC": 0.769,
+    "NMI": 0.7738802887384103,
+    "ARI": 0.6959460131538587
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-HYB[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "CIFAR-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.610893785339041,
+        "final_loss_consist": 0.03735915586813209,
+        "final_loss_entropy": 4.590683401245432,
+        "ACC": 0.9148,
+        "NMI": 0.8279876624268835,
+        "ARI": 0.8240127189285364
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            50000
+          ],
+          "mean": 0.16788332164287567,
+          "std": 0.08140713721513748
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            10000
+          ],
+          "mean": 0.16850998997688293,
+          "std": 0.0805063545703888
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.16788332164287567,
+    "mean_adaptive_gate_test": 0.16850998997688293,
+    "mean_hybrid_alpha_train": 0.5005770921707153,
+    "mean_hybrid_alpha_test": 0.5001946687698364
+  }
+}

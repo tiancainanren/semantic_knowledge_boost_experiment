@@ -1,0 +1,45 @@
+{
+  "dataset": "Flowers",
+  "best_second_wave": {
+    "dataset": "Flowers",
+    "config_name": "dual_agp",
+    "concat_ACC": 0.6823529411764706,
+    "concat_NMI": 0.8862012463884048,
+    "concat_ARI": 0.6069408427521444,
+    "train_ACC": 0.4725490196078431,
+    "train_NMI": 0.7922833147508928,
+    "train_ARI": 0.39071333938683367,
+    "image_guidance": 0.65,
+    "meta": "{\"source\": \"simple+prompt\", \"variant\": \"dual_agp_hybrid\", \"mean_alpha_train_prompt\": 0.5164346098899841, \"mean_alpha_test_prompt\": 0.5159069895744324}"
+  },
+  "previous_best": {
+    "method": "ag_guidance08_res",
+    "train_ACC": 0.4843137254901961,
+    "concat_ACC": 0.6647058823529411
+  },
+  "tac_baseline": {
+    "dataset": "Flowers",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.6774509803921569,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": -0.0058823529411764,
+    "train_ACC": 0.4176470588235294,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": -0.0274509803921568,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "Flowers",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.6833333333333333,
+    "concat_delta_vs_TAC": 0.0058823529411764,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.4450980392156862,
+    "train_delta_vs_TAC": 0.0274509803921568,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "gain_vs_previous_best_train_acc": -0.011764705882352955,
+  "gain_vs_tac_train_acc": 0.0549019607843137,
+  "gain_vs_kec_train_acc": 0.027450980392156932
+}

@@ -1,0 +1,34 @@
+{
+  "dataset": "CIFAR-20",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.5443,
+    "NMI": 0.606753693433456,
+    "ARI": 0.41264250089404275
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "CIFAR-20",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 20,
+        "final_loss_distill": 4.2190780590489965,
+        "final_loss_consist": 0.17684289690145513,
+        "final_loss_entropy": 5.963037481013033,
+        "ACC": 0.5238,
+        "NMI": 0.5744751918835832,
+        "ARI": 0.3843509645732311
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}

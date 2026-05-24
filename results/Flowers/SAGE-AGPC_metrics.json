@@ -1,0 +1,54 @@
+{
+  "dataset": "Flowers",
+  "method_family": "SAGE-AGPC",
+  "concat_metrics": {
+    "ACC": 0.6725490196078432,
+    "NMI": 0.8827513834290702,
+    "ARI": 0.5838814851019819
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGPC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.806655883789062,
+        "final_loss_consist": 2.9426333904266357,
+        "final_loss_entropy": 9.229616165161133,
+        "ACC": 0.42058823529411765,
+        "NMI": 0.7475274976415252,
+        "ARI": 0.3175183713296631
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            1020
+          ],
+          "mean": 0.1901118904352188,
+          "std": 0.0812891349196434
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            1020
+          ],
+          "mean": 0.19511140882968903,
+          "std": 0.08385324478149414
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.1901118904352188,
+    "mean_adaptive_gate_test": 0.19511140882968903
+  }
+}

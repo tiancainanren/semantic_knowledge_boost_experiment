@@ -1,0 +1,57 @@
+{
+  "dataset": "StanfordDogs",
+  "method_family": "SAGE-AG",
+  "concat_metrics": {
+    "ACC": 0.43357628765792033,
+    "NMI": 0.6396526759776278,
+    "ARI": 0.31590471704027157
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AG[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 8.466131711006165,
+        "final_loss_consist": 0.946249894797802,
+        "final_loss_entropy": 9.465193557739259,
+        "ACC": 0.4738095238095238,
+        "NMI": 0.6495584459441293,
+        "ARI": 0.33445964238562037
+      }
+    },
+    {
+      "variant_name": "SAGE-AG[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 7.644015812873841,
+        "final_loss_consist": 0.8289482712745666,
+        "final_loss_entropy": 9.45923068523407,
+        "ACC": 0.450485908649174,
+        "NMI": 0.6371432453805783,
+        "ARI": 0.3195756819035164
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.5
+    ],
+    "mean_gate_train": 0.15001264214515686,
+    "mean_gate_test": 0.15001264214515686,
+    "mean_smooth_train": 0.14797775447368622,
+    "mean_smooth_test": 0.14797775447368622
+  }
+}

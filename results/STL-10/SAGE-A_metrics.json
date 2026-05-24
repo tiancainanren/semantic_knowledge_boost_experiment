@@ -1,0 +1,36 @@
+{
+  "dataset": "STL-10",
+  "method_family": "SAGE-A",
+  "concat_metrics": {
+    "ACC": 0.8635,
+    "NMI": 0.9219634906759069,
+    "ARI": 0.8512841742002939
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-A[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "STL-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.5075092845492892,
+        "final_loss_consist": 0.00932062893278069,
+        "final_loss_entropy": 4.589258035024007,
+        "ACC": 0.984625,
+        "NMI": 0.9607181263022465,
+        "ARI": 0.9662471937448978
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ],
+    "mean_gate_train": 0.31351611018180847,
+    "mean_gate_test": 0.3139798045158386
+  }
+}

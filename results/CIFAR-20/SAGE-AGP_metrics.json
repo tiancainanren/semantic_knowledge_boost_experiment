@@ -1,0 +1,80 @@
+{
+  "dataset": "CIFAR-20",
+  "method_family": "SAGE-AGP",
+  "concat_metrics": {
+    "ACC": 0.5677,
+    "NMI": 0.5948608236234499,
+    "ARI": 0.41896899517173103
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGP[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "CIFAR-20",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 20,
+        "final_loss_distill": 4.147811299746799,
+        "final_loss_consist": 0.18119570643631452,
+        "final_loss_entropy": 5.964512947908382,
+        "ACC": 0.542,
+        "NMI": 0.5830792744497778,
+        "ARI": 0.395535244188043
+      }
+    },
+    {
+      "variant_name": "SAGE-AGP[g=0.25]",
+      "variant_suffix": "g=0.25",
+      "train_metrics": {
+        "dataset": "CIFAR-20",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 20,
+        "final_loss_distill": 4.033692485278415,
+        "final_loss_consist": 0.13029344710185356,
+        "final_loss_entropy": 5.962163566314068,
+        "ACC": 0.5091,
+        "NMI": 0.5564044099748657,
+        "ARI": 0.359707168086389
+      }
+    },
+    {
+      "variant_name": "SAGE-AGP[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "CIFAR-20",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 20,
+        "final_loss_distill": 3.924231074519993,
+        "final_loss_consist": 0.1087942290091023,
+        "final_loss_entropy": 5.963617398566806,
+        "ACC": 0.5588,
+        "NMI": 0.5782090745958243,
+        "ARI": 0.40923925044838566
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "mean_gate_train": 0.18140840530395508,
+    "mean_gate_test": 0.18159613013267517,
+    "mean_smooth_train": 0.19531318545341492,
+    "mean_smooth_test": 0.19491714239120483,
+    "mean_proto_mix_train": 0.24531318247318268,
+    "mean_proto_mix_test": 0.2449171394109726,
+    "anchor_num_train": 80,
+    "anchor_num_test": 80
+  }
+}

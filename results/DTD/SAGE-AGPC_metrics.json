@@ -1,0 +1,54 @@
+{
+  "dataset": "DTD",
+  "method_family": "SAGE-AGPC",
+  "concat_metrics": {
+    "ACC": 0.4734042553191489,
+    "NMI": 0.6140753271179074,
+    "ARI": 0.3162760963379843
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AGPC[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "DTD",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 47,
+        "final_loss_distill": 6.287831170218332,
+        "final_loss_consist": 0.5763806871005467,
+        "final_loss_entropy": 7.643247876848493,
+        "ACC": 0.4952127659574468,
+        "NMI": 0.6218682805559252,
+        "ARI": 0.3473591254441559
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            3760
+          ],
+          "mean": 0.21850384771823883,
+          "std": 0.09023801982402802
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            1880
+          ],
+          "mean": 0.21876448392868042,
+          "std": 0.08893340826034546
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.21850384771823883,
+    "mean_adaptive_gate_test": 0.21876448392868042
+  }
+}

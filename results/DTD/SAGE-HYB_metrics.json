@@ -1,0 +1,56 @@
+{
+  "dataset": "DTD",
+  "method_family": "SAGE-HYB",
+  "concat_metrics": {
+    "ACC": 0.4622340425531915,
+    "NMI": 0.6166245058282557,
+    "ARI": 0.30884057136970905
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-HYB[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "DTD",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 47,
+        "final_loss_distill": 6.323179517473493,
+        "final_loss_consist": 0.5992089424814496,
+        "final_loss_entropy": 7.644534928458078,
+        "ACC": 0.48404255319148937,
+        "NMI": 0.6177430788566234,
+        "ARI": 0.33989856233433907
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            3760
+          ],
+          "mean": 0.21866421401500702,
+          "std": 0.09021826833486557
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            1880
+          ],
+          "mean": 0.21893928945064545,
+          "std": 0.08892391622066498
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.21866421401500702,
+    "mean_adaptive_gate_test": 0.21893928945064545,
+    "mean_hybrid_alpha_train": 0.493027001619339,
+    "mean_hybrid_alpha_test": 0.4926140606403351
+  }
+}

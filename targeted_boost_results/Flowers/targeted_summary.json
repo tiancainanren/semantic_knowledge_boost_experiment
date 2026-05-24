@@ -1,0 +1,65 @@
+{
+  "dataset": "Flowers",
+  "best_targeted": {
+    "dataset": "Flowers",
+    "config_name": "ag_guidance08_res",
+    "family": "AG",
+    "image_guidance": 0.8,
+    "concat_ACC": 0.6647058823529411,
+    "concat_NMI": 0.8770453786521809,
+    "concat_ARI": 0.5708780199421816,
+    "train_ACC": 0.4843137254901961,
+    "train_NMI": 0.799025350376389,
+    "train_ARI": 0.41060226676017525,
+    "config": "{\"name\": \"ag_guidance08_res\", \"family\": \"AG\", \"image_guidance\": 0.8, \"graph_topk\": 20, \"smooth_max\": 0.32, \"graph_residual_rho\": 0.12}",
+    "meta": "{\"mean_gate_train\": 0.1553666591644287, \"mean_gate_test\": 0.15435554087162018, \"mean_smooth_train\": 0.18851125240325928, \"mean_smooth_test\": 0.18504633009433746, \"mean_proto_mix_train\": 0.2539013922214508, \"mean_proto_mix_test\": 0.25005146861076355, \"anchor_num_train\": 304, \"anchor_num_test\": 304}"
+  },
+  "previous_best": {
+    "dataset": "Flowers",
+    "method": "SAGE-AG[g=0.5]",
+    "concat_ACC": 0.6803921568627451,
+    "concat_delta_vs_TAC": 0.0029411764705882,
+    "concat_delta_vs_KEC": -0.0029411764705882,
+    "train_ACC": 0.4617647058823529,
+    "train_delta_vs_TAC": 0.0441176470588235,
+    "train_delta_vs_KEC": 0.0166666666666667,
+    "family": "SAGE-AG"
+  },
+  "tac_baseline": {
+    "dataset": "Flowers",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.6774509803921569,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": -0.0058823529411764,
+    "train_ACC": 0.4176470588235294,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": -0.0274509803921568,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "Flowers",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.6833333333333333,
+    "concat_delta_vs_TAC": 0.0058823529411764,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.4450980392156862,
+    "train_delta_vs_TAC": 0.0274509803921568,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "paper_kec_reference": {
+    "source": "KEC paper Table 1 (main paper)",
+    "concat": {
+      "NMI": 0.873,
+      "ACC": 0.728,
+      "ARI": 0.675
+    },
+    "train": {
+      "NMI": 0.873,
+      "ACC": 0.726,
+      "ARI": 0.676
+    }
+  },
+  "gain_vs_previous_best_train_acc": 0.022549019607843168,
+  "gain_vs_tac_train_acc": 0.06666666666666665
+}

@@ -1,0 +1,4 @@
+﻿dataset,paper_source,paper_kec_concat_ACC,paper_kec_train_ACC,our_reproduced_kec_concat_ACC,our_reproduced_kec_train_ACC,our_targeted_best_train_ACC,targeted_minus_paper_kec_train
+DTD,KEC paper Table 6 (supplementary comparison results),0.474,0.513,0.4441489361702128,0.4829787234042553,0.5218085106382979,0.008808510638297906
+Flowers,KEC paper Table 1 (main paper),0.728,0.726,0.6833333333333333,0.4450980392156862,0.4843137254901961,-0.2416862745098039
+Pets,KEC paper Table 1 (main paper),0.678,0.673,0.6620332515671845,0.7770509675660943,0.8255655491959663,0.1525655491959662

@@ -1,0 +1,31 @@
+{
+  "dataset": "StanfordDogs",
+  "cluster_num": 120,
+  "train_samples": 20580,
+  "test_samples": 20580,
+  "knowledge_bank_size": 120,
+  "tac_baseline": {
+    "ACC": 0.4377065111758989,
+    "NMI": 0.637291837992525,
+    "ARI": 0.3177929139967706
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.4240038872691934,
+    "NMI": 0.6343328589939664,
+    "ARI": 0.31476306016143357
+  },
+  "kec_baseline_train": {
+    "dataset": "StanfordDogs",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 120,
+    "final_loss_distill": 7.689109468460083,
+    "final_loss_consist": 0.8129498869180679,
+    "final_loss_entropy": 9.458099985122681,
+    "ACC": 0.43649173955296405,
+    "NMI": 0.6329136327193549,
+    "ARI": 0.31060560298296597
+  }
+}

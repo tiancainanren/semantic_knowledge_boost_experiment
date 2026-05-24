@@ -1,0 +1,53 @@
+{
+  "dataset": "StanfordDogs",
+  "best_targeted": {
+    "dataset": "StanfordDogs",
+    "config_name": "agp_base_g0",
+    "family": "AGP",
+    "image_guidance": 0.0,
+    "concat_ACC": 0.4399902818270165,
+    "concat_NMI": 0.6340585997585358,
+    "concat_ARI": 0.3258615285621157,
+    "train_ACC": 0.49067055393586007,
+    "train_NMI": 0.6568164959678612,
+    "train_ARI": 0.3500297149419991,
+    "config": "{\"name\": \"agp_base_g0\", \"family\": \"AGP\", \"image_guidance\": 0.0}",
+    "meta": "{\"mean_gate_train\": 0.15001264214515686, \"mean_gate_test\": 0.15001264214515686, \"mean_smooth_train\": 0.14797775447368622, \"mean_smooth_test\": 0.14797775447368622, \"mean_proto_mix_train\": 0.19797776639461517, \"mean_proto_mix_test\": 0.19797776639461517, \"anchor_num_train\": 480, \"anchor_num_test\": 480}"
+  },
+  "previous_best": {
+    "dataset": "StanfordDogs",
+    "method": "SAGE-AGP[g=0.0]",
+    "concat_ACC": 0.4399902818270165,
+    "concat_delta_vs_TAC": 0.0022837706511175,
+    "concat_delta_vs_KEC": 0.015986394557823,
+    "train_ACC": 0.49067055393586,
+    "train_delta_vs_TAC": 0.0326530612244898,
+    "train_delta_vs_KEC": 0.054178814382896,
+    "family": "SAGE-AGP"
+  },
+  "tac_baseline": {
+    "dataset": "StanfordDogs",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.4377065111758989,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": 0.0137026239067055,
+    "train_ACC": 0.4580174927113702,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": 0.0215257531584062,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "StanfordDogs",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.4240038872691934,
+    "concat_delta_vs_TAC": -0.0137026239067055,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.436491739552964,
+    "train_delta_vs_TAC": -0.0215257531584062,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "paper_kec_reference": null,
+  "gain_vs_previous_best_train_acc": 5.551115123125783e-17,
+  "gain_vs_tac_train_acc": 0.032653061224489854
+}

@@ -1,0 +1,8 @@
+﻿Dataset,Best Core Variant,Core ACC,Best Exploratory Variant,Exploratory ACC,Exploratory - Core
+CIFAR-10,SAGE-AG[g=0.0],92.25,SAGE-HYB[adaptive],91.48,-0.77
+CIFAR-20,SAGE-AG[g=0.0],61.25,SAGE-HYB[adaptive],51.84,-9.41
+STL-10,SAGE-AG[g=0.5],98.55,SAGE-AGPC[adaptive],98.54,-0.01
+DTD,SAGE-AG[g=0.0],50.90,SAGE-AGPC[adaptive],49.52,-1.38
+StanfordDogs,SAGE-AGP[g=0.0],49.07,SAGE-AGPC[adaptive],47.61,-1.45
+Flowers,SAGE-AG[g=0.5],46.18,SAGE-AGPC[adaptive],42.06,-4.12
+Pets,SAGE-AGP[g=0.25],82.17,SAGE-HYB[adaptive],80.32,-1.85

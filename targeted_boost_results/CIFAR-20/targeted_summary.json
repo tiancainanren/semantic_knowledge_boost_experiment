@@ -1,0 +1,53 @@
+{
+  "dataset": "CIFAR-20",
+  "best_targeted": {
+    "dataset": "CIFAR-20",
+    "config_name": "ag_base_g0",
+    "family": "AG",
+    "image_guidance": 0.0,
+    "concat_ACC": 0.5686,
+    "concat_NMI": 0.6098520098547738,
+    "concat_ARI": 0.4313028448756638,
+    "train_ACC": 0.6125,
+    "train_NMI": 0.6110480326230281,
+    "train_ARI": 0.44544206718111595,
+    "config": "{\"name\": \"ag_base_g0\", \"family\": \"AG\", \"image_guidance\": 0.0}",
+    "meta": "{\"mean_gate_train\": 0.18140840530395508, \"mean_gate_test\": 0.18159613013267517, \"mean_smooth_train\": 0.19531318545341492, \"mean_smooth_test\": 0.19491714239120483, \"mean_proto_mix_train\": 0.24531318247318268, \"mean_proto_mix_test\": 0.2449171394109726, \"anchor_num_train\": 80, \"anchor_num_test\": 80}"
+  },
+  "previous_best": {
+    "dataset": "CIFAR-20",
+    "method": "SAGE-AG[g=0.0]",
+    "concat_ACC": 0.5686,
+    "concat_delta_vs_TAC": 0.0242999999999999,
+    "concat_delta_vs_KEC": -0.0060999999999999,
+    "train_ACC": 0.6125,
+    "train_delta_vs_TAC": 0.0887,
+    "train_delta_vs_KEC": 0.085,
+    "family": "SAGE-AG"
+  },
+  "tac_baseline": {
+    "dataset": "CIFAR-20",
+    "method": "TAC[g=0.0]",
+    "concat_ACC": 0.5443,
+    "concat_delta_vs_TAC": 0.0,
+    "concat_delta_vs_KEC": -0.0303999999999999,
+    "train_ACC": 0.5238,
+    "train_delta_vs_TAC": 0.0,
+    "train_delta_vs_KEC": -0.0036999999999999,
+    "family": "TAC"
+  },
+  "kec_reproduction": {
+    "dataset": "CIFAR-20",
+    "method": "KEC[g=0.5]",
+    "concat_ACC": 0.5747,
+    "concat_delta_vs_TAC": 0.0303999999999999,
+    "concat_delta_vs_KEC": 0.0,
+    "train_ACC": 0.5275,
+    "train_delta_vs_TAC": 0.0036999999999999,
+    "train_delta_vs_KEC": 0.0,
+    "family": "KEC"
+  },
+  "paper_kec_reference": null,
+  "gain_vs_previous_best_train_acc": 0.0,
+  "gain_vs_tac_train_acc": 0.0887
+}

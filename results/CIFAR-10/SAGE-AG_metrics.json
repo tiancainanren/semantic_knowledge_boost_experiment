@@ -1,0 +1,57 @@
+{
+  "dataset": "CIFAR-10",
+  "method_family": "SAGE-AG",
+  "concat_metrics": {
+    "ACC": 0.7617,
+    "NMI": 0.766661163545775,
+    "ARI": 0.6856659893257958
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AG[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "CIFAR-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.654117227829609,
+        "final_loss_consist": 0.04807073288817996,
+        "final_loss_entropy": 4.590503815523128,
+        "ACC": 0.9225,
+        "NMI": 0.8414823368262535,
+        "ARI": 0.8386178058923015
+      }
+    },
+    {
+      "variant_name": "SAGE-AG[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "CIFAR-10",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 10,
+        "final_loss_distill": 2.5643992891016696,
+        "final_loss_consist": 0.027874885357378684,
+        "final_loss_entropy": 4.589963603265507,
+        "ACC": 0.9069,
+        "NMI": 0.8170933270179827,
+        "ARI": 0.8094823870921328
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.5
+    ],
+    "mean_gate_train": 0.3203212022781372,
+    "mean_gate_test": 0.3184451758861542,
+    "mean_smooth_train": 0.2099592387676239,
+    "mean_smooth_test": 0.209428608417511
+  }
+}

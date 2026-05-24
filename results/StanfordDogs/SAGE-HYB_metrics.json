@@ -1,0 +1,56 @@
+{
+  "dataset": "StanfordDogs",
+  "method_family": "SAGE-HYB",
+  "concat_metrics": {
+    "ACC": 0.43615160349854226,
+    "NMI": 0.6378888515203688,
+    "ARI": 0.32668738334576136
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-HYB[adaptive]",
+      "variant_suffix": "adaptive",
+      "train_metrics": {
+        "dataset": "StanfordDogs",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 120,
+        "final_loss_distill": 7.946153151988983,
+        "final_loss_consist": 0.9068741783499717,
+        "final_loss_entropy": 9.466176629066467,
+        "ACC": 0.45826044703595725,
+        "NMI": 0.6427904292284748,
+        "ARI": 0.3233080778806139
+      }
+    }
+  ],
+  "meta": {
+    "train_variants": [
+      {
+        "variant_suffix": "adaptive",
+        "image_guidance_train": {
+          "type": "ndarray",
+          "shape": [
+            20580
+          ],
+          "mean": 0.2576681077480316,
+          "std": 0.09049868583679199
+        },
+        "image_guidance_test": {
+          "type": "ndarray",
+          "shape": [
+            20580
+          ],
+          "mean": 0.2576681077480316,
+          "std": 0.09049868583679199
+        }
+      }
+    ],
+    "mean_adaptive_gate_train": 0.2576681077480316,
+    "mean_adaptive_gate_test": 0.2576681077480316,
+    "mean_hybrid_alpha_train": 0.49727949500083923,
+    "mean_hybrid_alpha_test": 0.49727949500083923
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "STL-10",
+  "cluster_num": 10,
+  "train_samples": 5000,
+  "test_samples": 8000,
+  "knowledge_bank_size": 10,
+  "tac_baseline": {
+    "ACC": 0.86175,
+    "NMI": 0.9200472981222613,
+    "ARI": 0.8493017008450532
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.86325,
+    "NMI": 0.9223273619868699,
+    "ARI": 0.8512348558334453
+  },
+  "kec_baseline_train": {
+    "dataset": "STL-10",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 10,
+    "final_loss_distill": 2.5063878430260553,
+    "final_loss_consist": 0.008932408048874803,
+    "final_loss_entropy": 4.5892546441819935,
+    "ACC": 0.9845,
+    "NMI": 0.9604866498949838,
+    "ARI": 0.965974098434897
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "CIFAR-10",
+  "cluster_num": 10,
+  "train_samples": 50000,
+  "test_samples": 10000,
+  "knowledge_bank_size": 10,
+  "tac_baseline": {
+    "ACC": 0.7606,
+    "NMI": 0.7729092695936484,
+    "ARI": 0.691891470010091
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.7706,
+    "NMI": 0.7740126009161201,
+    "ARI": 0.6987021229474742
+  },
+  "kec_baseline_train": {
+    "dataset": "CIFAR-10",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 10,
+    "final_loss_distill": 2.57889481918099,
+    "final_loss_consist": 0.031064872985187265,
+    "final_loss_entropy": 4.590348858194253,
+    "ACC": 0.8883,
+    "NMI": 0.7918718403859691,
+    "ARI": 0.776759225453619
+  }
+}

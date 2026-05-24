@@ -1,0 +1,34 @@
+{
+  "dataset": "Flowers",
+  "method_family": "KEC",
+  "concat_metrics": {
+    "ACC": 0.6833333333333333,
+    "NMI": 0.878938961920416,
+    "ARI": 0.5835438460501091
+  },
+  "train_variants": [
+    {
+      "variant_name": "KEC[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 8.819873809814453,
+        "final_loss_consist": 2.8335928916931152,
+        "final_loss_entropy": 9.226058006286621,
+        "ACC": 0.44509803921568625,
+        "NMI": 0.7718938667844571,
+        "ARI": 0.3548197917275367
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.5
+    ]
+  }
+}

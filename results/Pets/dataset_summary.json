@@ -1,0 +1,31 @@
+{
+  "dataset": "Pets",
+  "cluster_num": 37,
+  "train_samples": 3680,
+  "test_samples": 3669,
+  "knowledge_bank_size": 9,
+  "tac_baseline": {
+    "ACC": 0.702098664486236,
+    "NMI": 0.8096062119235549,
+    "ARI": 0.6070879359419828
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.6620332515671845,
+    "NMI": 0.8034660661223374,
+    "ARI": 0.5958808742402283
+  },
+  "kec_baseline_train": {
+    "dataset": "Pets",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 37,
+    "final_loss_distill": 5.328347751072475,
+    "final_loss_consist": 0.3518227679388864,
+    "final_loss_entropy": 7.166366236550467,
+    "ACC": 0.7770509675660943,
+    "NMI": 0.82813439046401,
+    "ARI": 0.6784504298977441
+  }
+}

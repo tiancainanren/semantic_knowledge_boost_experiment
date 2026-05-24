@@ -1,0 +1,31 @@
+{
+  "dataset": "Flowers",
+  "cluster_num": 102,
+  "train_samples": 1020,
+  "test_samples": 1020,
+  "knowledge_bank_size": 76,
+  "tac_baseline": {
+    "ACC": 0.6774509803921569,
+    "NMI": 0.8761450202001215,
+    "ARI": 0.5802507094622753
+  },
+  "kec_baseline_concat": {
+    "ACC": 0.6833333333333333,
+    "NMI": 0.878938961920416,
+    "ARI": 0.5835438460501091
+  },
+  "kec_baseline_train": {
+    "dataset": "Flowers",
+    "epochs": 20,
+    "batch_size": 512,
+    "temperature": 0.5,
+    "topK": 50,
+    "cluster_num": 102,
+    "final_loss_distill": 8.819873809814453,
+    "final_loss_consist": 2.8335928916931152,
+    "final_loss_entropy": 9.226058006286621,
+    "ACC": 0.44509803921568625,
+    "NMI": 0.7718938667844571,
+    "ARI": 0.3548197917275367
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "Flowers",
+  "source": "computed_from_local_images",
+  "num_samples": 1020,
+  "num_classes": 102,
+  "ACC": 0.5725490196078431,
+  "NMI": 0.8206432263638511,
+  "ARI": 0.45444476409792717
+}

@@ -1,0 +1,34 @@
+{
+  "dataset": "Pets",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.702098664486236,
+    "NMI": 0.8096062119235549,
+    "ARI": 0.6070879359419828
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "Pets",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 37,
+        "final_loss_distill": 5.8200916562761575,
+        "final_loss_consist": 0.52841169493539,
+        "final_loss_entropy": 7.173258304595947,
+        "ACC": 0.7735077677841373,
+        "NMI": 0.8376168322917897,
+        "ARI": 0.6893880654603355
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}

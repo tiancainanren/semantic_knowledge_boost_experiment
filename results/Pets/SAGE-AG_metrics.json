@@ -1,0 +1,57 @@
+{
+  "dataset": "Pets",
+  "method_family": "SAGE-AG",
+  "concat_metrics": {
+    "ACC": 0.678659035159444,
+    "NMI": 0.8138488343584513,
+    "ARI": 0.6176077137641252
+  },
+  "train_variants": [
+    {
+      "variant_name": "SAGE-AG[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "Pets",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 37,
+        "final_loss_distill": 5.796154362814767,
+        "final_loss_consist": 0.47196235827037264,
+        "final_loss_entropy": 7.168685368129185,
+        "ACC": 0.8062142273098937,
+        "NMI": 0.8534651324472988,
+        "ARI": 0.7230789155063849
+      }
+    },
+    {
+      "variant_name": "SAGE-AG[g=0.5]",
+      "variant_suffix": "g=0.5",
+      "train_metrics": {
+        "dataset": "Pets",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 37,
+        "final_loss_distill": 5.309338024684361,
+        "final_loss_consist": 0.3600181596619742,
+        "final_loss_entropy": 7.168186323983329,
+        "ACC": 0.7835922594712456,
+        "NMI": 0.8346138305021622,
+        "ARI": 0.6907578782714504
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0,
+      0.5
+    ],
+    "mean_gate_train": 0.31748151779174805,
+    "mean_gate_test": 0.31734269857406616,
+    "mean_smooth_train": 0.16710925102233887,
+    "mean_smooth_test": 0.16622357070446014
+  }
+}

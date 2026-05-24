@@ -1,0 +1,9 @@
+{
+  "dataset": "Pets",
+  "source": "computed_from_local_images",
+  "num_samples": 3669,
+  "num_classes": 37,
+  "ACC": 0.5167620605069502,
+  "NMI": 0.6551323319011204,
+  "ARI": 0.4007905955977583
+}

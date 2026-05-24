@@ -1,0 +1,34 @@
+{
+  "dataset": "Flowers",
+  "method_family": "TAC",
+  "concat_metrics": {
+    "ACC": 0.6774509803921569,
+    "NMI": 0.8761450202001215,
+    "ARI": 0.5802507094622753
+  },
+  "train_variants": [
+    {
+      "variant_name": "TAC[g=0.0]",
+      "variant_suffix": "g=0.0",
+      "train_metrics": {
+        "dataset": "Flowers",
+        "epochs": 20,
+        "batch_size": 512,
+        "temperature": 0.5,
+        "topK": 50,
+        "cluster_num": 102,
+        "final_loss_distill": 9.015913009643555,
+        "final_loss_consist": 3.007859706878662,
+        "final_loss_entropy": 9.22951889038086,
+        "ACC": 0.4176470588235294,
+        "NMI": 0.7434755910128954,
+        "ARI": 0.31710273490732527
+      }
+    }
+  ],
+  "meta": {
+    "train_image_guidance_options": [
+      0.0
+    ]
+  }
+}
