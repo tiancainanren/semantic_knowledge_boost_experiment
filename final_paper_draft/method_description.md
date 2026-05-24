@@ -16,9 +16,9 @@ TAC 证明了 noun retrieval 可以为无监督图像聚类提供外部语义引
 对于图像特征 $x_i$，我们分别计算 noun 原型、concept 原型和 attribute 原型的软匹配分布。
 
 - noun confidence:
-  $c_i^{noun} = \max \operatorname{softmax}(x_i W_{noun}^\top / \tau_n)$
+  $c_i^{noun} = \max \mathrm{softmax}(x_i W_{noun}^\top / \tau_n)$
 - concept confidence:
-  $c_i^{concept} = \max \operatorname{softmax}(x_i W_{concept}^\top / \tau_c)$
+  $c_i^{concept} = \max \mathrm{softmax}(x_i W_{concept}^\top / \tau_c)$
 - attribute confidence:
   $c_i^{attr}$ 由 concept-conditioned attribute grounding 得到。
 
@@ -32,7 +32,7 @@ $c_i^{know} = \alpha c_i^{concept} + (1-\alpha)c_i^{attr}$
 
 设 TAC 的 noun retrieval 向量为 $r_i$，KEC knowledge 向量为 $k_i$。我们根据两者的相对可靠性为每个样本计算 gate：
 
-$g_i = \operatorname{clip}( c_i^{know} / (c_i^{know} + c_i^{noun}), g_{min}, g_{max})$
+$g_i = \mathrm{clip}( c_i^{know} / (c_i^{know} + c_i^{noun}), g_{min}, g_{max})$
 
 于是得到：
 
